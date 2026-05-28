@@ -1,0 +1,32 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Unit test / coverage reports
+.coverage
+.pytest_cache/
+
+# Environments
+.env
+.venv
+env/
+venv/
+
+# IDEs
+.idea/
+.vscode/
+
+# OS generated files
+.DS_Store
+
+# Local tool config
+.roo/
+
+# DuckDB files
+*.duckdb
+*.duckdb.wal
