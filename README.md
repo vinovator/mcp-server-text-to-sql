@@ -87,6 +87,26 @@ Restart Claude Desktop, then ask natural language questions like:
 Go to **Cursor Settings → MCP** and add the server with the same command and args as above.
 
 
+## Claude Desktop in Action
+
+The screenshots below show real interactions with the server connected to Claude Desktop as an MCP client. The model converts each natural language prompt into a SQL query, executes it through the `execute_analytical_query` tool, and summarizes the result.
+
+### Schema discovery
+Claude reads the `resource://database/schema` resource and presents a column-by-column overview on demand.
+
+![Schema overview rendered by Claude Desktop](docs/screenshots/schema-overview.png)
+
+### Aggregate query
+A single-sentence prompt — *"what is the average salary in the dataset?"* — is answered with the computed aggregate and surrounding context (record count, salary range).
+
+![Average salary query and result](docs/screenshots/avg-salary-query.png)
+
+### Ranking / analytical query
+A comparative question — *"which role has the highest AI replacement risk?"* — returns the top role with the underlying score, sample size, and a short comparison against neighbouring roles.
+
+![Highest AI replacement risk query and result](docs/screenshots/ai-replacement-risk-query.png)
+
+
 ## Data Attribution
 
 The dataset `AI_Impact_on_Jobs_2030.csv` located in the `data/` folder is sourced from Kaggle.
